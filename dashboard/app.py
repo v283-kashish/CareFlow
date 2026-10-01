@@ -114,6 +114,28 @@ st.bar_chart(
 )
 
 st.markdown("---")
+
+# Transition Analysis
+st.subheader("🔄 Patient Transition Analysis")
+
+transition_file = BASE_DIR / "data" / "transition_analysis.csv"
+transition_df = pd.read_csv(transition_file)
+
+st.dataframe(
+    transition_df[
+        ["Transition", "count", "mean", "min", "max"]
+    ],
+    use_container_width=True
+)
+
+st.subheader("⏱️ Average Transition Time")
+
+st.bar_chart(
+    transition_df.set_index("Transition")["mean"]
+)
+
+st.markdown("---")
+
 # Patient Journey Explorer
 st.subheader("🔎 Patient Journey Explorer")
 
