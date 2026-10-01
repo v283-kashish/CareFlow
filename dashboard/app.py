@@ -138,6 +138,19 @@ st.dataframe(
 )
 
 st.markdown("---")
+# Process Mining Model
+st.subheader("🔀 Discovered Patient Process Model")
+
+process_model_file = BASE_DIR / "data" / "process_model.png"
+
+if process_model_file.exists():
+    st.image(
+        process_model_file,
+        caption="Patient Process Model generated using PM4Py",
+        use_container_width=True
+    )
+else:
+    st.warning("Process model image not found.")
 
 # Patient journey duration
 st.subheader("⏱️ Patient Journey Duration")
