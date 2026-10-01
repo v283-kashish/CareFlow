@@ -114,6 +114,30 @@ st.bar_chart(
 )
 
 st.markdown("---")
+# Patient Journey Explorer
+st.subheader("🔎 Patient Journey Explorer")
+
+patient_ids = sorted(ehr_df["Case_ID"].unique())
+
+selected_patient = st.selectbox(
+    "Select a Patient",
+    patient_ids
+)
+
+patient_events = ehr_df[
+    ehr_df["Case_ID"] == selected_patient
+].sort_values("Timestamp")
+
+st.write(f"### Journey for {selected_patient}")
+
+st.dataframe(
+    patient_events[
+        ["Case_ID", "Activity", "Timestamp"]
+    ],
+    use_container_width=True
+)
+
+st.markdown("---")
 
 # Patient journey duration
 st.subheader("⏱️ Patient Journey Duration")
@@ -125,9 +149,36 @@ st.dataframe(
     ),
     use_container_width=True
 )
+# Patient journey flow
+activities = patient_events["Activity"].tolist()
 
-# Raw event data
-st.subheader("📋 EHR Event Log")
+journey_flow = " → ".join(activities)
+
+st.write("### 🔄 Patient Journey Flow")
+
+st.info(journey_flow)
+
+# Loopback status
+selected_result = loopback_df[
+    loopback_df["Case_ID"] == selected_patient
+]
+
+if not selected_result.empty:
+    has_loopback = selected_result.iloc[0]["Loopback"]
+
+    if has_loopback:
+        st.warning("⚠️ This patient experienced a loopback.")
+    else:
+        st.success("✅ No loopback detected for this patient.")
+        # Selected patient duration
+selected_duration = selected_result["Duration_Minutes"].iloc[0]
+
+st.metric(
+    "Patient Journey Duration",
+    f"{selected_duration:.2f} min"
+)
+
+st.markdown("EHR Event Log")
 
 st.dataframe(
     ehr_df,
