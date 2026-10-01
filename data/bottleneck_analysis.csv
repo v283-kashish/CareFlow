@@ -1,0 +1,8 @@
+Rank,Transition,count,mean,min,max
+1,X-Ray → Triage,33,19.12,5.0,29.0
+2,Registration → Triage,100,18.44,5.0,30.0
+3,X-Ray → Billing,67,18.4,5.0,29.0
+4,Billing → Discharge,100,18.31,5.0,30.0
+5,Doctor Consultation → X-Ray,100,18.07,5.0,30.0
+6,Triage → Doctor Consultation,133,17.33,5.0,30.0
+7,Doctor Consultation → Billing,33,13.33,5.0,20.0
