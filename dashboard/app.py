@@ -63,6 +63,9 @@ st.subheader("📊 Activity Frequency")
 st.bar_chart(
     activity_df.set_index("Activity")["count"]
 )
+
+st.markdown("---")
+
 # Loopback Analysis
 st.subheader("🔄 Loopback Analysis")
 
@@ -94,6 +97,7 @@ st.dataframe(
 )
 
 st.markdown("---")
+
 # Bottleneck Analysis
 st.subheader("🚨 Process Bottleneck Analysis")
 
@@ -160,6 +164,7 @@ st.dataframe(
 )
 
 st.markdown("---")
+
 # Process Mining Model
 st.subheader("🔀 Discovered Patient Process Model")
 
@@ -174,7 +179,9 @@ if process_model_file.exists():
 else:
     st.warning("Process model image not found.")
 
-# Patient journey duration
+st.markdown("---")
+
+# Patient Journey Duration
 st.subheader("⏱️ Patient Journey Duration")
 
 st.dataframe(
@@ -184,7 +191,17 @@ st.dataframe(
     ),
     use_container_width=True
 )
-# Patient journey flow
+
+# Patient Journey Duration Chart
+st.subheader("📈 Patient Journey Duration by Patient")
+
+st.bar_chart(
+    duration_df.set_index("Case_ID")["duration_minutes"]
+)
+
+st.markdown("---")
+
+# Patient Journey Flow
 activities = patient_events["Activity"].tolist()
 
 journey_flow = " → ".join(activities)
@@ -199,21 +216,26 @@ selected_result = loopback_df[
 ]
 
 if not selected_result.empty:
+
     has_loopback = selected_result.iloc[0]["Loopback"]
 
     if has_loopback:
         st.warning("⚠️ This patient experienced a loopback.")
     else:
         st.success("✅ No loopback detected for this patient.")
-        # Selected patient duration
-selected_duration = selected_result["Duration_Minutes"].iloc[0]
 
-st.metric(
-    "Patient Journey Duration",
-    f"{selected_duration:.2f} min"
-)
+    # Selected patient duration
+    selected_duration = selected_result["Duration_Minutes"].iloc[0]
 
-st.markdown("EHR Event Log")
+    st.metric(
+        "Patient Journey Duration",
+        f"{selected_duration:.2f} min"
+    )
+
+st.markdown("---")
+
+# EHR Event Log
+st.subheader("📋 EHR Event Log")
 
 st.dataframe(
     ehr_df,
