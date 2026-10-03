@@ -180,6 +180,61 @@ else:
     st.warning("Process model image not found.")
 
 st.markdown("---")
+# Conformance Checking
+st.subheader("✅ Conformance Checking")
+
+conformance_file = BASE_DIR / "data" / "conformance_results.csv"
+conformance_df = pd.read_csv(conformance_file)
+
+# Conformance summary
+conformance_summary = (
+    conformance_df["Conformant"]
+    .value_counts()
+    .rename_axis("Conformance")
+    .reset_index(name="Patients")
+)
+
+conformance_summary["Conformance"] = conformance_summary[
+    "Conformance"
+].map({
+    True: "Conformant",
+    False: "Non-Conformant"
+})
+
+col1, col2 = st.columns(2)
+
+with col1:
+    conformant_count = (
+        conformance_df["Conformant"] == True
+    ).sum()
+
+    st.metric(
+        "Conformant Patients",
+        conformant_count
+    )
+
+with col2:
+    non_conformant_count = (
+        conformance_df["Conformant"] == False
+    ).sum()
+
+    st.metric(
+        "Non-Conformant Patients",
+        non_conformant_count
+    )
+
+st.bar_chart(
+    conformance_summary.set_index("Conformance")["Patients"]
+)
+
+st.dataframe(
+    conformance_df[
+        ["Case_ID", "Conformant"]
+    ],
+    use_container_width=True
+)
+
+st.markdown("---")
 
 # Patient Journey Duration
 st.subheader("⏱️ Patient Journey Duration")
