@@ -1,0 +1,5 @@
+Issue,Finding,Recommendation
+Highest Average Transition Time,X-Ray → Triage has the highest average transition time of 19.12 minutes.,"Review this transition for unnecessary waiting, manual processing, or resource constraints."
+Patient Loopbacks,33 out of 100 patients (33.0%) experienced a loopback.,Investigate the reason for patients returning to an earlier activity and improve information availability or process coordination.
+X-Ray to Triage Loopback,X-Ray → Triage occurs with an average transition time of 19.12 minutes.,Review the information or documentation required after X-Ray before sending patients back to Triage.
+Process Standardization,Some patient journeys do not follow the expected process sequence.,"Define clear process checkpoints between Registration, Triage, Consultation, X-Ray, Billing, and Discharge."
