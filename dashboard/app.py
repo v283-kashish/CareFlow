@@ -235,6 +235,66 @@ st.dataframe(
 )
 
 st.markdown("---")
+# Patient Risk / Delay Analysis
+st.subheader("🚨 Patient Risk / Delay Analysis")
+
+risk_file = BASE_DIR / "data" / "patient_risk_analysis.csv"
+risk_df = pd.read_csv(risk_file)
+
+# Risk summary
+risk_summary = (
+    risk_df["Risk_Level"]
+    .value_counts()
+    .reindex(["Low", "Medium", "High"])
+    .fillna(0)
+)
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.metric(
+        "Low Risk Patients",
+        int(risk_summary["Low"])
+    )
+
+with col2:
+    st.metric(
+        "Medium Risk Patients",
+        int(risk_summary["Medium"])
+    )
+
+with col3:
+    st.metric(
+        "High Risk Patients",
+        int(risk_summary["High"])
+    )
+
+# Risk distribution chart
+st.subheader("📊 Risk Level Distribution")
+
+st.bar_chart(risk_summary)
+
+# Patient risk table
+st.subheader("📋 Patient Risk Details")
+
+st.dataframe(
+    risk_df[
+        [
+            "Case_ID",
+            "duration_minutes",
+            "Loopback",
+            "Conformant",
+            "Risk_Score",
+            "Risk_Level"
+        ]
+    ].sort_values(
+        "Risk_Score",
+        ascending=False
+    ),
+    use_container_width=True
+)
+
+st.markdown("---")
 
 # Patient Journey Duration
 st.subheader("⏱️ Patient Journey Duration")
