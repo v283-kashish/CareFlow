@@ -1,0 +1,101 @@
+Case_ID,Expected_Process,Actual_Process,Conformant
+P0001,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0002,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0003,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0004,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0005,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0006,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0007,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0008,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0009,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0010,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0011,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0012,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0013,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0014,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0015,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0016,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0017,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0018,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0019,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0020,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0021,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0022,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0023,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0024,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0025,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0026,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0027,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0028,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0029,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0030,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0031,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0032,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0033,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0034,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0035,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0036,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0037,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0038,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0039,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0040,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0041,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0042,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0043,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0044,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0045,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0046,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0047,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0048,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0049,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0050,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0051,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0052,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0053,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0054,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0055,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0056,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0057,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0058,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0059,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0060,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0061,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0062,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0063,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0064,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0065,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0066,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0067,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0068,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0069,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0070,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0071,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0072,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0073,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0074,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0075,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0076,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0077,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0078,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0079,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0080,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0081,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0082,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0083,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0084,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0085,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0086,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0087,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0088,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0089,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0090,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0091,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0092,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0093,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0094,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0095,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0096,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0097,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0098,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Triage → Doctor Consultation → Billing → Discharge,False
+P0099,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
+P0100,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,Registration → Triage → Doctor Consultation → X-Ray → Billing → Discharge,True
